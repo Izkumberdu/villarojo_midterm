@@ -108,6 +108,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   height: 33,
                 ),
                 Container(
+                  padding: EdgeInsets.symmetric(vertical: 28),
                   width: 315,
                   height: 95,
                   decoration: BoxDecoration(
@@ -115,6 +116,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     color: Color(0xFF19202D),
                   ),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Expanded(
                         child: Column(
@@ -147,6 +149,64 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(2),
                           color: Color(0xFFC1D4F9),
+                        ),
+                      ),
+                      Expanded(
+                        child: Column(
+                          children: [
+                            Text(
+                              '54.21k',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: 'Gellix',
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w700),
+                            ),
+                            SizedBox(
+                              height: 5,
+                            ),
+                            Text(
+                              'Followers',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: 'Gellix',
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w500),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        width: 1,
+                        height: 38,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(2),
+                          color: Color(0xFFC1D4F9),
+                        ),
+                      ),
+                      Expanded(
+                        child: Column(
+                          children: [
+                            Text(
+                              '54.21k',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: 'Gellix',
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w700),
+                            ),
+                            SizedBox(
+                              height: 5,
+                            ),
+                            Text(
+                              'Followers',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: 'Gellix',
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w500),
+                            ),
+                          ],
                         ),
                       ),
                     ],
