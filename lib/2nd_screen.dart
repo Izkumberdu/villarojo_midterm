@@ -1,7 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:villarojo_midterm/screens/navbar.dart';
 
-class SecondScreen extends StatelessWidget {
-  const SecondScreen({super.key});
+class SecondScreen extends StatefulWidget {
+  const SecondScreen({Key? key}) : super(key: key);
+
+  @override
+  _SecondScreenState createState() => _SecondScreenState();
+}
+
+class _SecondScreenState extends State<SecondScreen> {
+  int _index = 0;
+
+  void _onTapped(int index) {
+    setState(() {
+      _index = index;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -20,6 +34,10 @@ class SecondScreen extends StatelessWidget {
             ],
           )
         ],
+      ),
+      bottomNavigationBar: BotNavBar(
+        currentIndex: _index,
+        onTap: _onTapped,
       ),
     );
   }

@@ -5,6 +5,7 @@ import 'package:villarojo_midterm/screens/home_screen_functions/china.dart';
 import 'package:villarojo_midterm/screens/home_screen_functions/hongkong.dart';
 import 'package:villarojo_midterm/screens/home_screen_functions/maldives.dart';
 import 'package:villarojo_midterm/screens/home_screen_functions/trending.dart';
+import 'package:villarojo_midterm/screens/navbar.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -225,36 +226,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        elevation: 0,
-        backgroundColor: Colors.white,
-        type: BottomNavigationBarType.fixed,
-        items: <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: _index == 0
-                ? Image.asset('assets/images/home_selected_icon.png')
-                : Image.asset('assets/images/home_unselected_icon.png'),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: _index == 1
-                ? Image.asset('assets/images/bookmark_selected_icon.png')
-                : Image.asset('assets/images/bookmark_unselected_icon.png'),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: _index == 2
-                ? Image.asset('assets/images/notification_selected_icon.png')
-                : Image.asset('assets/images/notification_unselected_icon.png'),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: _index == 3
-                ? Image.asset('assets/images/profile_selected_icon.png')
-                : Image.asset('assets/images/profile_unselected_icon.png'),
-            label: '',
-          ),
-        ],
+      bottomNavigationBar: BotNavBar(
         currentIndex: _index,
         onTap: _onTapped,
       ),
