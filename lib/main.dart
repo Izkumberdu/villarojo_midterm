@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:villarojo_midterm/2nd_screen.dart';
 import 'package:villarojo_midterm/screens/home_screen.dart';
 
 void main() {
@@ -16,7 +17,8 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/HomeScreen': (context) => HomeScreen(),
-        '/': (context) => HomeScreen(),
+        '/2ndscreen': (context) => SecondScreen(),
+        '/': (context) => SecondScreen(),
       },
     );
   }
