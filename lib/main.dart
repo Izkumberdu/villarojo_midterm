@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         '/HomeScreen': (context) => HomeScreen(),
         '/2ndscreen': (context) => SecondScreen(),
         '/profile': (context) => ProfileScreen(),
-        '/': (context) => ProfileScreen(),
+        '/': (context) => HomeScreen(),
       },
     );
   }

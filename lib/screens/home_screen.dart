@@ -20,6 +20,17 @@ class _HomeScreenState extends State<HomeScreen> {
   void _onTapped(int index) {
     setState(() {
       _index = index;
+      switch (index) {
+        case 0:
+          Navigator.pushNamed(context, '/');
+          break;
+        case 1:
+          Navigator.pushNamed(context, '/2ndscreen');
+          break;
+        case 3:
+          Navigator.pushNamed(context, '/profile');
+          break;
+      }
     });
   }
 

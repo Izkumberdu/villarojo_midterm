@@ -2,7 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:villarojo_midterm/screens/navbar.dart';
+import 'package:villarojo_midterm/screens/profile_screen_functions/church.dart';
 import 'package:villarojo_midterm/screens/profile_screen_functions/iran.dart';
+import 'package:villarojo_midterm/screens/profile_screen_functions/island.dart';
 import 'package:villarojo_midterm/screens/profile_screen_functions/science.dart';
 
 class ProfileScreen extends StatefulWidget {
@@ -13,11 +15,22 @@ class ProfileScreen extends StatefulWidget {
 }
 
 class _ProfileScreenState extends State<ProfileScreen> {
-  int _index = 0;
+  int _index = 3;
 
   void _onTapped(int index) {
     setState(() {
       _index = index;
+      switch (index) {
+        case 0:
+          Navigator.pushNamed(context, '/');
+          break;
+        case 1:
+          Navigator.pushNamed(context, '/2ndscreen');
+          break;
+        case 3:
+          Navigator.pushNamed(context, '/profile');
+          break;
+      }
     });
   }
 
@@ -28,6 +41,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 30),
           child: SingleChildScrollView(
+            scrollDirection: Axis.vertical,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -157,7 +171,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         child: Column(
                           children: [
                             Text(
-                              '54.21k',
+                              '2.11k',
                               style: TextStyle(
                                   color: Colors.white,
                                   fontFamily: 'Gellix',
@@ -168,7 +182,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               height: 5,
                             ),
                             Text(
-                              'Followers',
+                              'Posts',
                               style: TextStyle(
                                   color: Colors.white,
                                   fontFamily: 'Gellix',
@@ -190,7 +204,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         child: Column(
                           children: [
                             Text(
-                              '54.21k',
+                              '36.40k',
                               style: TextStyle(
                                   color: Colors.white,
                                   fontFamily: 'Gellix',
@@ -257,15 +271,31 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       fontSize: 17,
                       fontWeight: FontWeight.w700),
                 ),
+                SizedBox(
+                  height: 10,
+                ),
+                SizedBox(
+                  height: 143,
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: <Widget>[
+                      Church(),
+                      SizedBox(
+                        width: 15,
+                      ),
+                      Island(),
+                    ],
+                  ),
+                )
               ],
             ),
           ),
         ),
       ),
-      //bottomNavigationBar: BotNavBar(
-      //currentIndex: _index,
-      // onTap: _onTapped,
-      //),
+      bottomNavigationBar: BotNavBar(
+        currentIndex: _index,
+        onTap: _onTapped,
+      ),
     );
   }
 }
