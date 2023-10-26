@@ -164,6 +164,37 @@ class HomeScreen extends StatelessWidget {
                       Hongkong(),
                     ],
                   ),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'Short For You',
+                      style: TextStyle(
+                          fontFamily: 'Gallex',
+                          fontSize: 17,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                    Text(
+                      'View All',
+                      style: TextStyle(
+                          fontFamily: 'Gallex',
+                          fontSize: 12,
+                          fontWeight: FontWeight.w500,
+                          color: Color(0xFF5474FD)),
+                    )
+                  ],
+                ),
+                SizedBox(
+                  height: 88,
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: <Widget>[],
+                  ),
                 )
               ],
             ),
