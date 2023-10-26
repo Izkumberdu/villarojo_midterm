@@ -86,7 +86,11 @@ flutter:
     - assets/images/china.png
     - assets/images/keanu.png
     - assets/images/maldives-sand.png
-
+    - assets/images/elly.png
+    - assets/images/iran.png
+    - assets/images/putin.png
+    - assets/images/photo_elly_island.png
+    - assets/images/photo_elly_church.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

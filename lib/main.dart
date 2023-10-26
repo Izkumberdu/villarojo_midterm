@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:villarojo_midterm/2nd_screen.dart';
 import 'package:villarojo_midterm/screens/home_screen.dart';
+import 'package:villarojo_midterm/screens/profile.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +19,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/HomeScreen': (context) => HomeScreen(),
         '/2ndscreen': (context) => SecondScreen(),
-        '/': (context) => SecondScreen(),
+        '/profile': (context) => ProfileScreen(),
+        '/': (context) => ProfileScreen(),
       },
     );
   }
