@@ -96,37 +96,48 @@ class HomeScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Text(
-                  '#Health',
-                  style: TextStyle(
-                      fontFamily: 'Gellix',
-                      fontSize: 12,
-                      fontWeight: FontWeight.w500,
-                      color: Color(0xFF9397A0)),
-                ),
-                Text(
-                  '#Music',
-                  style: TextStyle(
-                      fontFamily: 'Gellix',
-                      fontSize: 12,
-                      fontWeight: FontWeight.w500,
-                      color: Color(0xFF9397A0)),
-                ),
-                Text(
-                  '#Technology',
-                  style: TextStyle(
-                      fontFamily: 'Gellix',
-                      fontSize: 12,
-                      fontWeight: FontWeight.w500,
-                      color: Color(0xFF9397A0)),
-                ),
-                Text(
-                  '#Sports',
-                  style: TextStyle(
-                      fontFamily: 'Gellix',
-                      fontSize: 12,
-                      fontWeight: FontWeight.w500,
-                      color: Color(0xFF9397A0)),
+                Expanded(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        '#Health',
+                        style: TextStyle(
+                          fontFamily: 'Gellix',
+                          fontSize: 12,
+                          fontWeight: FontWeight.w500,
+                          color: Color(0xFF9397A0),
+                        ),
+                      ),
+                      Text(
+                        '#Music',
+                        style: TextStyle(
+                          fontFamily: 'Gellix',
+                          fontSize: 12,
+                          fontWeight: FontWeight.w500,
+                          color: Color(0xFF9397A0),
+                        ),
+                      ),
+                      Text(
+                        '#Technology',
+                        style: TextStyle(
+                          fontFamily: 'Gellix',
+                          fontSize: 12,
+                          fontWeight: FontWeight.w500,
+                          color: Color(0xFF9397A0),
+                        ),
+                      ),
+                      Text(
+                        '#Sports',
+                        style: TextStyle(
+                          fontFamily: 'Gellix',
+                          fontSize: 12,
+                          fontWeight: FontWeight.w500,
+                          color: Color(0xFF9397A0),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),
