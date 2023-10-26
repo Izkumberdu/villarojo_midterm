@@ -61,6 +61,25 @@ flutter:
   assets:
     - assets/
     - assets/images/
+    - assets/images/arrow_back_icon.png
+    - assets/images/bookmark_selected_icon.png
+    - assets/images/bookmark_unselected_icon.png
+    - assets/images/bookmark_white_icon.png
+    - assets/images/calendar_icon.png
+    - assets/images/carousel_indicator_disabled.png
+    - assets/images/carousel_indicator_enabled.png
+    - assets/images/eye_icon.png
+    - assets/images/home_selected_icon.png
+    - assets/images/home_unselected_icon.png
+    - assets/images/notification_selected_icon.png
+    - assets/images/notification_unselected_icon.png
+    - assets/images/play_icon.png
+    - assets/images/profile_selected_icon.png
+    - assets/images/profile_unselected_icon.png
+    - assets/images/search_icon.png
+    - assets/images/share_icon.png
+    - assets/images/time_icon.png
+    - assets/images/Vector.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -73,10 +92,10 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+  fonts:
+    - family: Gellix
+      fonts:
+        - asset: fonts/gellix-11.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
