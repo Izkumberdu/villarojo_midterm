@@ -142,6 +142,29 @@ class HomeScreen extends StatelessWidget {
               ],
             ),
             SizedBox(height: 30),
+            SizedBox(
+              height: 304,
+              child: ListView(
+                padding: EdgeInsets.only(right: 20),
+                children: <Widget>[
+                  Container(
+                    height: 255,
+                    width: 304,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(16),
+                      color: Colors.white,
+                    ),
+                    child: Container(
+                      width: 231,
+                      height: 164,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(16),
+                          image: DecorationImage(image: AssetImage())),
+                    ),
+                  ),
+                ],
+              ),
+            )
           ],
         ),
       ),

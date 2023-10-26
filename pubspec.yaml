@@ -59,27 +59,29 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/
-    - assets/images/
-    - assets/images/arrow_back_icon.png
-    - assets/images/bookmark_selected_icon.png
-    - assets/images/bookmark_unselected_icon.png
-    - assets/images/bookmark_white_icon.png
-    - assets/images/calendar_icon.png
-    - assets/images/carousel_indicator_disabled.png
-    - assets/images/carousel_indicator_enabled.png
-    - assets/images/eye_icon.png
-    - assets/images/home_selected_icon.png
-    - assets/images/home_unselected_icon.png
-    - assets/images/notification_selected_icon.png
-    - assets/images/notification_unselected_icon.png
-    - assets/images/play_icon.png
-    - assets/images/profile_selected_icon.png
-    - assets/images/profile_unselected_icon.png
-    - assets/images/search_icon.png
-    - assets/images/share_icon.png
-    - assets/images/time_icon.png
-    - assets/images/Vector.png
+    - assets/arrow_back_icon.png
+    - assets/bookmark_selected_icon.png
+    - assets/bookmark_unselected_icon.png
+    - assets/bookmark_white_icon.png
+    - assets/calendar_icon.png
+    - assets/carousel_indicator_disabled.png
+    - assets/carousel_indicator_enabled.png
+    - assets/eye_icon.png
+    - assets/home_selected_icon.png
+    - assets/home_unselected_icon.png
+    - assets/hongkon.png
+    - assets/maldives.png
+    - assets/notification_selected_icon.png
+    - assets/notification_unselected_icon.png
+    - assets/panbong.png
+    - assets/play_icon.png
+    - assets/profile_selected_icon.png
+    - assets/profile_unselected_icon.png
+    - assets/sangdongmin.png
+    - assets/search_icon.png
+    - assets/share_icon.png
+    - assets/time_icon.png
+    - assets/Vector.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
