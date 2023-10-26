@@ -1,8 +1,10 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:villarojo_midterm/screens/home_screen_functions/china.dart';
 import 'package:villarojo_midterm/screens/home_screen_functions/hongkong.dart';
 import 'package:villarojo_midterm/screens/home_screen_functions/maldives.dart';
+import 'package:villarojo_midterm/screens/home_screen_functions/trending.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key});
@@ -190,10 +192,19 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
+                  height: 19,
+                ),
+                SizedBox(
                   height: 88,
                   child: ListView(
                     scrollDirection: Axis.horizontal,
-                    children: <Widget>[],
+                    children: <Widget>[
+                      Trending(),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      China(),
+                    ],
                   ),
                 )
               ],

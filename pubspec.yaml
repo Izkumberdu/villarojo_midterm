@@ -82,6 +82,10 @@ flutter:
     - assets/images/share_icon.png
     - assets/images/time_icon.png
     - assets/images/Vector.png
+    - assets/images/trending.png
+    - assets/images/china.png
+    - assets/images/keanu.png
+    - assets/images/maldives-sand.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
