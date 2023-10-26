@@ -6,8 +6,21 @@ import 'package:villarojo_midterm/screens/home_screen_functions/hongkong.dart';
 import 'package:villarojo_midterm/screens/home_screen_functions/maldives.dart';
 import 'package:villarojo_midterm/screens/home_screen_functions/trending.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key});
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({Key? key}) : super(key: key);
+
+  @override
+  _HomeScreenState createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  int _index = 0;
+
+  void _onTapped(int index) {
+    setState(() {
+      _index = index;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +33,7 @@ class HomeScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SizedBox(height: 56),
+                SizedBox(height: 30),
                 Row(
                   children: [
                     Container(
@@ -211,6 +224,39 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        elevation: 0,
+        backgroundColor: Colors.white,
+        type: BottomNavigationBarType.fixed,
+        items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: _index == 0
+                ? Image.asset('assets/images/home_selected_icon.png')
+                : Image.asset('assets/images/home_unselected_icon.png'),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: _index == 1
+                ? Image.asset('assets/images/bookmark_selected_icon.png')
+                : Image.asset('assets/images/bookmark_unselected_icon.png'),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: _index == 2
+                ? Image.asset('assets/images/notification_selected_icon.png')
+                : Image.asset('assets/images/notification_unselected_icon.png'),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: _index == 3
+                ? Image.asset('assets/images/profile_selected_icon.png')
+                : Image.asset('assets/images/profile_unselected_icon.png'),
+            label: '',
+          ),
+        ],
+        currentIndex: _index,
+        onTap: _onTapped,
       ),
     );
   }

@@ -92,7 +92,7 @@ class Hongkong extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(width: 61),
+                    SizedBox(width: 86),
                     Container(
                       height: 37,
                       width: 37,
