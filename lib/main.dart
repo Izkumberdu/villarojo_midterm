@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:villarojo_midterm/screens/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,6 +13,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return MaterialApp(
+      initialRoute: '/',
+      routes: {
+        '/HomeScreen': (context) => HomeScreen(),
+        '/': (context) => HomeScreen(),
+      },
+    );
   }
 }
