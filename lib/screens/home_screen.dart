@@ -1,6 +1,8 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:villarojo_midterm/screens/home_screen_functions/hongkong.dart';
+import 'package:villarojo_midterm/screens/home_screen_functions/maldives.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key});
@@ -150,30 +152,19 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: 30),
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
+                SizedBox(
+                  height: 30,
+                ),
+                SizedBox(
+                  height: 320,
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
                     children: <Widget>[
-                      Container(
-                        height: 304,
-                        width: 255,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(16),
-                          color: Colors.white,
-                        ),
-                      ),
-                      Container(
-                        height: 304,
-                        width: 255,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(16),
-                          color: Colors.white,
-                        ),
-                      ),
+                      Maldives(),
+                      Hongkong(),
                     ],
                   ),
-                ),
+                )
               ],
             ),
           ),

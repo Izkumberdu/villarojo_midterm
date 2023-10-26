@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 
-class Maldives extends StatelessWidget {
-  const Maldives({Key? key}) : super(key: key);
+class Hongkong extends StatelessWidget {
+  const Hongkong({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class Maldives extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(16),
                 image: DecorationImage(
-                  image: AssetImage('assets/images/maldives.png'),
+                  image: AssetImage('assets/images/hongkon.png'),
                 ),
               ),
             ),
@@ -38,7 +38,7 @@ class Maldives extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Feel the thrill on the only',
+                  'Hong kong wins over wall',
                   style: TextStyle(
                     fontFamily: 'Gellix',
                     fontWeight: FontWeight.w600,
@@ -48,7 +48,7 @@ class Maldives extends StatelessWidget {
                 ),
                 SizedBox(height: 4),
                 Text(
-                  'surf simulator in the Maldives 2022',
+                  'Street CEOs after lifting strict',
                   style: TextStyle(
                     fontFamily: 'Gellix',
                     fontWeight: FontWeight.w600,
@@ -66,14 +66,13 @@ class Maldives extends StatelessWidget {
                     SizedBox(width: 10),
                     CircleAvatar(
                       radius: 19,
-                      backgroundImage:
-                          AssetImage('assets/images/sangdongmin.png'),
+                      backgroundImage: AssetImage('assets/images/panbong.png'),
                     ),
                     SizedBox(width: 12),
                     Column(
                       children: [
                         Text(
-                          'Sang Dong-Min',
+                          'Pan Bong',
                           style: TextStyle(
                             fontFamily: 'Gellix',
                             fontSize: 12,
@@ -83,7 +82,7 @@ class Maldives extends StatelessWidget {
                         ),
                         SizedBox(height: 5),
                         Text(
-                          'Sep 9, 2022',
+                          'Jan 3, 2022',
                           style: TextStyle(
                             fontFamily: 'Gellix',
                             fontSize: 12,
